@@ -265,7 +265,7 @@ We have codified all of the dependencies you will need into a YAML file that `an
 >    +++ b/requirements.yml
 >    @@ -0,0 +1,14 @@
 >    +- src: galaxyproject.galaxy
->    +  version: 0.10.3
+>    +  version: 0.10.4
 >    +- src: galaxyproject.nginx
 >    +  version: 0.7.0
 >    +- src: galaxyproject.postgresql
@@ -434,8 +434,15 @@ For this tutorial, we will use the default "peer" authentication, so we need to 
 >    > postgresql_pg_hba_conf:
 >    > - host all all 127.0.0.1/32 md5
 >    > ```
->    >
 >    > Here you should either add multiple lines per IP address that needs access to the Postgres server (with netmask `/32`), or a less specific IP range defined also [via netmask.](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing#IPv4_CIDR_blocks)
+>    >
+>    > Or you can make your PostgreSQL server accessible by domain name or IP address, for example when using celery worker nodes:
+>    > ```yaml
+>    > postgresql_config:
+>    > - listen_addresses: "'YOUR_IP/HOSTNAME'"    # make sure you use "' both
+>    > - max_connections: 50       # decrease connection limit
+>    > ```
+>    > You can use `"'*'"` to listen on all or `"''"` for none.
 >    >
 >    > Additionally you'll need to change the `postgresql_objects_users` statement to include a password (maybe stored in a vault, discussed later!)
 >    >
