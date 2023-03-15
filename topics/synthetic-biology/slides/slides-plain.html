@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/synthetic-biology/slides/slides-plain.html" />
@@ -24,7 +23,7 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="Introduction to Synthetic Biology" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="1970-01-01 00:33:42 +0000" />
+<meta name="DC.date" content="2023-03-15 15:19:35 +0000" />
 <meta name="DC.creator" content="Kenza Bazi-Kabbaj" />
 <meta name="DC.creator" content="Thomas Duigou" />
 <meta name="DC.creator" content="Joan Hérisson" />
@@ -36,21 +35,25 @@
         
         
         
-        
         <meta name="description" content="Collection of tutorials developed and maintained by the w..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Introduction to Synthetic Biology" />
         <meta property="og:description" content="Collection of tutorials developed and maintained by the w..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
+        
     </head>
     <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
+                
+                    Galaxy Training!
+                
             </a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -147,6 +150,7 @@
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
+        <!-- link to feedback -->
         
             <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
@@ -159,27 +163,14 @@
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
             </div>
 
         </div>
@@ -189,7 +180,6 @@
                 <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
             </div>
 
-            
             <div id="archive-selector">
             
                 <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-07-01/topics/synthetic-biology/slides/slides-plain.html" title="Version 2022-07-01">2022-07-01</a>
@@ -225,6 +215,7 @@
     </nav>
 </header>
 
+        
         <div class="container main-content" role="main">
         <section class="tutorial">
 	<a href="https://github.com/galaxyproject/training-material/blob/main//topics/synthetic-biology/slides/slides.html">View markdown source on GitHub</a>
@@ -233,31 +224,7 @@
 <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: 
-<a href="/training-material/hall-of-fame/kenza12/" class="contributor-badge contributor-kenza12"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/kenza12?s=27" alt="Avatar">Kenza Bazi-Kabbaj</a>
-
-
-
-<a href="/training-material/hall-of-fame/tduigou/" class="contributor-badge contributor-tduigou"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/tduigou?s=27" alt="Avatar">Thomas Duigou</a>
-
-
-
-<a href="/training-material/hall-of-fame/breakthewall/" class="contributor-badge contributor-breakthewall"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/breakthewall?s=27" alt="Avatar">Joan Hérisson</a>
-
-
-
-<a href="/training-material/hall-of-fame/guillaume-gricourt/" class="contributor-badge contributor-guillaume-gricourt"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/guillaume-gricourt?s=27" alt="Avatar">Guillaume Gricourt</a>
-
-
-
-<a href="/training-material/hall-of-fame/ioanagry/" class="contributor-badge contributor-ioanagry"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/ioanagry?s=27" alt="Avatar">Ioana Popescu</a>
-
-
-
-<a href="/training-material/hall-of-fame/jfaulon/" class="contributor-badge contributor-jfaulon"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/jfaulon?s=27" alt="Avatar">Jean-Loup Faulon</a>
-
-
-
+		Authors: <a href="/training-material/hall-of-fame/kenza12/" class="contributor-badge contributor-kenza12"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/kenza12?s=27" alt="Avatar">Kenza Bazi-Kabbaj</a><a href="/training-material/hall-of-fame/tduigou/" class="contributor-badge contributor-tduigou"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/tduigou?s=27" alt="Avatar">Thomas Duigou</a><a href="/training-material/hall-of-fame/breakthewall/" class="contributor-badge contributor-breakthewall"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/breakthewall?s=27" alt="Avatar">Joan Hérisson</a><a href="/training-material/hall-of-fame/guillaume-gricourt/" class="contributor-badge contributor-guillaume-gricourt"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/guillaume-gricourt?s=27" alt="Avatar">Guillaume Gricourt</a><a href="/training-material/hall-of-fame/ioanagry/" class="contributor-badge contributor-ioanagry"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/ioanagry?s=27" alt="Avatar">Ioana Popescu</a><a href="/training-material/hall-of-fame/jfaulon/" class="contributor-badge contributor-jfaulon"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/jfaulon?s=27" alt="Avatar">Jean-Loup Faulon</a>
 	</div>
 
 </div>
@@ -269,7 +236,7 @@
 
 		
 
-		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> May 11, 2022 </div>
+		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Mar 15, 2023 </div>
 
 	<hr />
 
@@ -292,7 +259,7 @@
 
 <p>.left[Engineers apply the principles of science and mathematics to develop solutions to problems.]</p>
 
-<p>.left.image-40[<img src="../images/design_process.png" alt="Left-aligned image" />]</p>
+<p>.left.image-40[<img src="../images/design_process.png" alt="Left-aligned image. " loading="lazy" />]</p>
 
 <hr />
 
@@ -312,7 +279,7 @@
 
 <h2 id="hierarchy-for-synthetic-biology-inspired-by-computer-engineering">Hierarchy for synthetic biology inspired by computer engineering</h2>
 
-<p>.center[<img src="../images/hierarchy_computer_eng.jpg" alt="Centered image" />]</p>
+<p>.center[<img src="../images/hierarchy_computer_eng.jpg" alt="Centered image. " loading="lazy" />]</p>
 
 <hr />
 
@@ -322,7 +289,7 @@
 
 <p>.left[<strong>Synthetic biology</strong> provides novel strategies to perturb endogenous networks, enabling systems-level data to be obtained under a myriad of otherwise inaccessible cellular states.]</p>
 
-<p>.center[<img src="../images/system_synthetic_biology.jpg" alt="Centered image" />]</p>
+<p>.center[<img src="../images/system_synthetic_biology.jpg" alt="Centered image. " loading="lazy" />]</p>
 
 <hr />
 
@@ -330,7 +297,7 @@
 
 <h2 id="bottom-up-approach">Bottom-up approach</h2>
 
-<p>.center[<img src="../images/bottom-up-approach.png" alt="Centered image" />]</p>
+<p>.center[<img src="../images/bottom-up-approach.png" alt="Centered image. " loading="lazy" />]</p>
 
 <hr />
 
@@ -407,7 +374,7 @@
 
 <p>The <strong>Design-Build-Test-Learn (DBTL)</strong> framework aims to fulfill particular design criteria for a synthetic biology application, which might for example be the production of a specific product at an optimal titer or the detection of a specific clinical biomarker using an engineered gut microbiome.</p>
 
-<p>.center[<img src="../images/DBTL_Cycle.png" alt="Centered image" />]</p>
+<p>.center[<img src="../images/DBTL_Cycle.png" alt="Centered image. " loading="lazy" />]</p>
 
 <hr />
 
@@ -427,7 +394,7 @@
 <p>.left[Synthetic biology tools are essential and widely used in the engineering process and the bioproduction of chemicals.
 Here an overview of the current Synthetic Biology toolbox:]</p>
 
-<p>.center[<img src="../images/synthetic_biology_toolbox.png" alt="Centered image" />]</p>
+<p>.center[<img src="../images/synthetic_biology_toolbox.png" alt="Centered image. " loading="lazy" />]</p>
 
 <hr />
 
@@ -437,7 +404,7 @@ Here an overview of the current Synthetic Biology toolbox:]</p>
 
 <p>.left[Genetic engineering here aims to rewire the bacterial metabolism in order to enable the production of the target compound within a chassis strain. If the strain turns out to be non-genetically editable, compound biosynthesis pathways are transferred in organisms specialized in bio-production, called <strong>chassis</strong>.]</p>
 
-<p>.center.image-50[<img src="../images/bioproduction_drugs_e_coli.png" alt="Centered image" />]</p>
+<p>.center.image-50[<img src="../images/bioproduction_drugs_e_coli.png" alt="Centered image. " loading="lazy" />]</p>
 
 <hr />
 
@@ -447,7 +414,7 @@ Here an overview of the current Synthetic Biology toolbox:]</p>
 .left[“<em>A chassis refers to the organism that serves as a foundation to physically house genetic components and supports them by providing the resources to function, such as transcription and translation machinery</em>”]
 .left[They are required to propagate the genetic information and to express the genes encoded in it.]</p>
 
-<p>.pull-right.image-30[<img src="../images/chassis_target.png" alt="Centered image" />]</p>
+<p>.pull-right.image-30[<img src="../images/chassis_target.png" alt="Centered image. " loading="lazy" />]</p>
 
 <p>.left[Commonly used chassis in synthetic biology:]
 .left[- Prokaryotes: 
@@ -470,7 +437,7 @@ Here an overview of the current Synthetic Biology toolbox:]</p>
 
 <p>.left[The tools and workflows used in these tutorials are currently available in the <a href="https://toolshed.g2.bx.psu.edu/">toolshed</a> in the <em>Synthetic Biology</em> category and on the <a href="https://galaxy-synbiocad.org/">Galaxy SynBioCAD Portal</a>. They cover an end-to-end metabolic pathway design process from the selection of <strong>chassis</strong> to the design of DNA parts to be assembled to build libraries of strains producing desired chemical <strong>targets</strong>.]</p>
 
-<p>.center[<img src="../images/synbiocad_tools.png" alt="Centered image" />]</p>
+<p>.center[<img src="../images/synbiocad_tools.png" alt="Centered image. " loading="lazy" />]</p>
 
 <hr />
 
@@ -524,44 +491,42 @@ This material is licensed under the <a rel="license" href="https://creativecommo
         The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
         </p>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/b3192832de88c502588a977a276ac4ec8ba940b2">b3192832de88c502588a977a276ac4ec8ba940b2</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/dba078257bcd21dcfd74b58134ab6e6f8cd589a5">dba078257bcd21dcfd74b58134ab6e6f8cd589a5</a></p>
     </div>
 </footer>
 
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>

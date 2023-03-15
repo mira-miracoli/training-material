@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/upload-data-to-ena/slides-plain.html" />
@@ -24,28 +23,32 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="Submitting SARS-CoV-2 sequences to ENA" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="1970-01-01 00:33:41 +0000" />
+<meta name="DC.date" content="2023-03-15 15:19:33 +0000" />
 <meta name="DC.creator" content="Miguel Roncoroni" />
 
         
         
         
         
-        
-        <meta name="description" content="Collection of tutorials developed and maintained by the w..." />
+        <meta name="description" content="A collection of microtutorials explaining various feature..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Submitting SARS-CoV-2 sequences to ENA" />
-        <meta property="og:description" content="Collection of tutorials developed and maintained by the w..." />
+        <meta property="og:description" content="A collection of microtutorials explaining various feature..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
+        
     </head>
     <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
+                
+                    Galaxy Training!
+                
             </a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -113,6 +116,12 @@
            <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
         
+        
+        <a class="dropdown-item" href="/training-material/topics/galaxy-interface/faqs/" title="Check our FAQs for the Using Galaxy and Managing your Data topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
             <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
         </a>
@@ -142,6 +151,7 @@
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
+        <!-- link to feedback -->
         
             <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
@@ -154,27 +164,14 @@
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
             </div>
 
         </div>
@@ -184,7 +181,6 @@
                 <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
             </div>
 
-            
             <div id="archive-selector">
             
                 <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-07-01/topics/galaxy-interface/tutorials/upload-data-to-ena/slides-plain.html" title="Version 2022-07-01">2022-07-01</a>
@@ -220,6 +216,7 @@
     </nav>
 </header>
 
+        
         <div class="container main-content" role="main">
         <section class="tutorial">
 	<a href="https://github.com/galaxyproject/training-material/blob/main//topics/galaxy-interface/tutorials/upload-data-to-ena/slides.html">View markdown source on GitHub</a>
@@ -228,11 +225,7 @@
 <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: 
-<a href="/training-material/hall-of-fame/roncoronimiguel/" class="contributor-badge contributor-roncoronimiguel"><img src="https://avatars.githubusercontent.com/roncoronimiguel?s=27" alt="Avatar">Miguel Roncoroni</a>
-
-
-
+		Authors: <a href="/training-material/hall-of-fame/roncoronimiguel/" class="contributor-badge contributor-roncoronimiguel"><img src="https://avatars.githubusercontent.com/roncoronimiguel?s=27" alt="Avatar">Miguel Roncoroni</a>
 	</div>
 
 </div>
@@ -258,7 +251,7 @@
 
 		
 
-		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Aug 10, 2021 </div>
+		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Mar 15, 2023 </div>
 
 	<hr />
 
@@ -275,7 +268,7 @@ ENA is:</p>
 ]
 ]
 .pull-right[
-<img src="../../images/upload-data-to-ena/ENA-FAIR.png" alt="ENA-FAIR" /></li>
+<img src="../../images/upload-data-to-ena/ENA-FAIR.png" alt="ENA-FAIR. " loading="lazy" /></li>
 </ul>
 
 <p>The European Nucleotide Archive and INSDC
@@ -291,7 +284,7 @@ Why is raw SARS-CoV-2 sequence data important?</p>
   <li>Enables discovery of minor allelic variants and <a href="https://virological.org/t/global-framework-for-sars-cov-2-data-analysis-application-to-intrahost-variation-part-1/623">intrahost variation</a>
 ]
 .image-40[
-<img src="../../images/upload-data-to-ena/intra-host.png" alt="Intrahost variation" />
+<img src="../../images/upload-data-to-ena/intra-host.png" alt="Intrahost variation. " loading="lazy" />
 ]</li>
 </ul>
 
@@ -305,7 +298,7 @@ Why use Galaxy to submit to ENA?</p>
   <li>simple metadata input via a template spreadsheet or interactively</li>
   <li>no bioinformatics skills needed
 ]
-.image-75[<img src="../../images/upload-data-to-ena/upload-tool.png" alt="upload-tool" />
+.image-75[<img src="../../images/upload-data-to-ena/upload-tool.png" alt="upload-tool. " loading="lazy" />
 ]</li>
 </ul>
 
@@ -313,7 +306,7 @@ Why use Galaxy to submit to ENA?</p>
 
 <h3 id="submission-overview">Submission overview</h3>
 <p>.image-100[
-<img src="../../images/upload-data-to-ena/reads_submission.png" alt="reads-submission" />
+<img src="../../images/upload-data-to-ena/reads_submission.png" alt="reads-submission. " loading="lazy" />
 ]
 —</p>
 
@@ -336,7 +329,7 @@ Data:</p>
   <li><a href="https://www.ebi.ac.uk/ena/submit/sra/#registration">ENA Webin credentials</a> in your Galaxy user information
 ]
 .left[
-<img src="../../images/upload-data-to-ena/ENA-credentials.png" alt="ENA-credentials" />
+<img src="../../images/upload-data-to-ena/ENA-credentials.png" alt="ENA-credentials. " loading="lazy" />
 ]
 —</li>
 </ul>
@@ -348,7 +341,7 @@ For the submission of SARS-CoV-2 reads <a href="https://ena-docs.readthedocs.io/
   <li>study, sample, experiment and run information</li>
   <li>additional information for viral samples (<a href="https://www.ebi.ac.uk/ena/browser/view/ERC000033">viral checklist</a>)
 ]
-<img src="../../images/upload-data-to-ena/metadata_model_reads.png" alt="metadata-model" /></li>
+<img src="../../images/upload-data-to-ena/metadata_model_reads.png" alt="metadata-model. " loading="lazy" /></li>
 </ul>
 
 <hr />
@@ -357,7 +350,7 @@ For the submission of SARS-CoV-2 reads <a href="https://ena-docs.readthedocs.io/
 <p>.left[
 Interactive metadata input in Galaxy:
 ]
-<img src="../../images/upload-data-to-ena/interactive_metadata.png" alt="interactive metadata" />
+<img src="../../images/upload-data-to-ena/interactive_metadata.png" alt="interactive metadata. " loading="lazy" />
 —</p>
 
 <h3 id="metadata-2">Metadata</h3>
@@ -367,7 +360,7 @@ Metadata <a href="https://drive.google.com/file/d/1Gx78GKh58PmRjdmJ05DBbpObAL-3o
   <li>one sheet each for study, sample, experiment and run</li>
   <li>built-in controlled vocabulary
 ]
-<img src="../../images/upload-data-to-ena/metadata_template.png" alt="metadata_template" />
+<img src="../../images/upload-data-to-ena/metadata_template.png" alt="metadata_template. " loading="lazy" />
 —</li>
 </ul>
 
@@ -377,7 +370,7 @@ Metadata <a href="https://drive.google.com/file/d/1Gx78GKh58PmRjdmJ05DBbpObAL-3o
   <li>Different metadata objects are linked using Aliases</li>
   <li>Aliases must be unique
 ]
-<img src="../../images/upload-data-to-ena/metadata_model_reads.png" alt="metadata-model" />
+<img src="../../images/upload-data-to-ena/metadata_model_reads.png" alt="metadata-model. " loading="lazy" />
 —</li>
 </ul>
 
@@ -388,7 +381,7 @@ Aliases link metadata objects:</p>
   <li>Experiments are linked to Study and Samples</li>
   <li>Runs are linked to Experiments
 ]
-<img src="../../images/upload-data-to-ena/study_sample_exp.png" alt="study-sample" />
+<img src="../../images/upload-data-to-ena/study_sample_exp.png" alt="study-sample. " loading="lazy" />
 —</li>
 </ul>
 
@@ -399,7 +392,7 @@ Aliases link metadata objects:</p>
   <li>Experiments are linked to Study and Samples</li>
   <li>Runs are linked to Experiments
 ]
-<img src="../../images/upload-data-to-ena/exp_run.png" alt="exp-run" />
+<img src="../../images/upload-data-to-ena/exp_run.png" alt="exp-run. " loading="lazy" />
 —</li>
 </ul>
 
@@ -409,7 +402,7 @@ Aliases link metadata to data:</p>
 <ul>
   <li>Data (filename.fastq.gz) is linked to Run Alias
 ]
-<img src="../../images/upload-data-to-ena/data_metadata.png" alt="data-metadata" />
+<img src="../../images/upload-data-to-ena/data_metadata.png" alt="data-metadata. " loading="lazy" />
 —</li>
 </ul>
 
@@ -461,44 +454,42 @@ This material is licensed under the <a rel="license" href="https://creativecommo
         The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
         </p>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/b3192832de88c502588a977a276ac4ec8ba940b2">b3192832de88c502588a977a276ac4ec8ba940b2</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/dba078257bcd21dcfd74b58134ab6e6f8cd589a5">dba078257bcd21dcfd74b58134ab6e6f8cd589a5</a></p>
     </div>
 </footer>
 
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>

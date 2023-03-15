@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/statistics/tutorials/fruit_360/slides-plain.html" />
@@ -24,28 +23,32 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="Image classification in Galaxy with fruit 360 dataset" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="1970-01-01 00:33:41 +0000" />
+<meta name="DC.date" content="2023-03-15 15:19:35 +0000" />
 <meta name="DC.creator" content="Kaivan Kamali" />
 
         
         
         
         
-        
-        <meta name="description" content="Collection of tutorials developed and maintained by the w..." />
+        <meta name="description" content="Statistical Analyses for omics data and machine learning ..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Image classification in Galaxy with fruit 360 dataset" />
-        <meta property="og:description" content="Collection of tutorials developed and maintained by the w..." />
+        <meta property="og:description" content="Statistical Analyses for omics data and machine learning ..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
+        
     </head>
     <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
+                
+                    Galaxy Training!
+                
             </a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -113,6 +116,12 @@
            <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
         
+        
+        <a class="dropdown-item" href="/training-material/topics/statistics/faqs/" title="Check our FAQs for the Statistics and machine learning topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
             <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
         </a>
@@ -142,6 +151,7 @@
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
+        <!-- link to feedback -->
         
             <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
@@ -154,27 +164,14 @@
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
             </div>
 
         </div>
@@ -184,7 +181,6 @@
                 <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
             </div>
 
-            
             <div id="archive-selector">
             
                 <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-07-01/topics/statistics/tutorials/fruit_360/slides-plain.html" title="Version 2022-07-01">2022-07-01</a>
@@ -220,6 +216,7 @@
     </nav>
 </header>
 
+        
         <div class="container main-content" role="main">
         <section class="tutorial">
 	<a href="https://github.com/galaxyproject/training-material/blob/main//topics/statistics/tutorials/fruit_360/slides.html">View markdown source on GitHub</a>
@@ -228,11 +225,7 @@
 <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: 
-<a href="/training-material/hall-of-fame/kxk302/" class="contributor-badge contributor-kxk302"><img src="https://avatars.githubusercontent.com/kxk302?s=27" alt="Avatar">Kaivan Kamali</a>
-
-
-
+		Authors: <a href="/training-material/hall-of-fame/kxk302/" class="contributor-badge contributor-kxk302"><img src="https://avatars.githubusercontent.com/kxk302?s=27" alt="Avatar">Kaivan Kamali</a>
 	</div>
 
 </div>
@@ -290,6 +283,14 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                             
                             <li> Deep Learning (Part 3) - Convolutional neural networks (CNN):
                             
@@ -312,14 +313,6 @@
                     
                         
                     
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
                 
             </ul>
         
@@ -329,7 +322,7 @@
 		</ul>
 		
 
-		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Dec 1, 2021 </div>
+		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Mar 15, 2023 </div>
 
 	<hr />
 
@@ -470,7 +463,7 @@
 
 <h1 id="3-by-3-filter">3 by 3 Filter</h1>
 
-<p><img src="/training-material/topics/statistics/images/Conv_no_padding_no_strides.gif" alt="A 3 by 3 filter applied to a 4 by 4 image, resulting in a 2 by 2 image" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
+<p><img src="/training-material/topics/statistics/images/Conv_no_padding_no_strides.gif" alt="A 3 by 3 filter applied to a 4 by 4 image, resulting in a 2 by 2 image. " loading="lazy" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
 
 <hr />
 
@@ -522,7 +515,7 @@
 
 <h1 id="3-by-3-filter-with-padding-of-1">3 by 3 filter with padding of 1</h1>
 
-<p><img src="/training-material/topics/statistics/images/Conv_same_padding_no_strides.gif" alt="A 3 by 3 filter applied to a 5 by 5 image, with padding of 1, resulting in a 5 by 5 image" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
+<p><img src="/training-material/topics/statistics/images/Conv_same_padding_no_strides.gif" alt="A 3 by 3 filter applied to a 5 by 5 image, with padding of 1, resulting in a 5 by 5 image. " loading="lazy" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
 
 <hr />
 
@@ -538,7 +531,7 @@
 
 <h1 id="3-by-3-filter-with-stride-of-2">3 by 3 filter with stride of 2</h1>
 
-<p><img src="/training-material/topics/statistics/images/Conv_no_padding_strides.gif" alt="A 3 by 3 filter applied to a 5 by 5 image, with stride of 2, resulting in a 2 by 2 image" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
+<p><img src="/training-material/topics/statistics/images/Conv_no_padding_strides.gif" alt="A 3 by 3 filter applied to a 5 by 5 image, with stride of 2, resulting in a 2 by 2 image. " loading="lazy" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
 
 <hr />
 
@@ -554,7 +547,7 @@
 
 <h1 id="3-by-3-filter-with-dilation-of-2">3 by 3 filter with dilation of 2</h1>
 
-<p><img src="/training-material/topics/statistics/images/Conv_dilation.gif" alt="A 3 by 3 filter applied to a 7 by 7 image, with dilation of 2, resulting in a 3 by 3 image" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
+<p><img src="/training-material/topics/statistics/images/Conv_dilation.gif" alt="A 3 by 3 filter applied to a 7 by 7 image, with dilation of 2, resulting in a 3 by 3 image. " loading="lazy" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
 
 <hr />
 
@@ -570,25 +563,25 @@
 
 <h1 id="relu-activation-function">Relu activation function</h1>
 
-<p><img src="/training-material/topics/statistics/images/Conv_ReLU.png" alt="Two matrices representing filter output before and after ReLU activation function is applied" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
+<p><img src="/training-material/topics/statistics/images/Conv_ReLU.png" alt="Two matrices representing filter output before and after ReLU activation function is applied. " loading="lazy" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
 
 <hr />
 
 <h1 id="single-channel-2d-convolution">Single channel 2D convolution</h1>
 
-<p><img src="/training-material/topics/statistics/images/Conv_single_input_channel.png" alt="One matrix representing an input vector and another matrix representing a filter, along with calculation for single input channel two dimensional convolution operation" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
+<p><img src="/training-material/topics/statistics/images/Conv_single_input_channel.png" alt="One matrix representing an input vector and another matrix representing a filter, along with calculation for single input channel two dimensional convolution operation. " loading="lazy" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
 
 <hr />
 
 <h1 id="triple-channel-2d-convolution">Triple channel 2D convolution</h1>
 
-<p><img src="/training-material/topics/statistics/images/Conv_multiple_input_channel.png" alt="Three matrices representing an input vector and another three matrices representing a filter, along with calculation for multiple input channel two dimensional convolution operation" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
+<p><img src="/training-material/topics/statistics/images/Conv_multiple_input_channel.png" alt="Three matrices representing an input vector and another three matrices representing a filter, along with calculation for multiple input channel two dimensional convolution operation. " loading="lazy" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
 
 <hr />
 
 <h1 id="triple-channel-2d-convolution-in-3d">Triple channel 2D convolution in 3D</h1>
 
-<p><img src="/training-material/topics/statistics/images/Conv_multiple_channel_3d.gif" alt="Multiple cubes representing input vector, filter, and output in a 3 channel 2 dimensional convolution operation" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
+<p><img src="/training-material/topics/statistics/images/Conv_multiple_channel_3d.gif" alt="Multiple cubes representing input vector, filter, and output in a 3 channel 2 dimensional convolution operation. " loading="lazy" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
 
 <hr />
 
@@ -643,7 +636,7 @@
 
 <h1 id="an-example-cnn">An example CNN</h1>
 
-<p><img src="/training-material/topics/statistics/images/Conv_CNN.png" alt="A convolutional neural network with 3 convolution layers followed by 3 pooling layers" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
+<p><img src="/training-material/topics/statistics/images/Conv_CNN.png" alt="A convolutional neural network with 3 convolution layers followed by 3 pooling layers. " loading="lazy" /> <!-- https://pixy.org/3013900/ CC0 license--></p>
 
 <hr />
 
@@ -732,7 +725,7 @@
   <li>Galaxy Training Materials (<a href="https://training.galaxyproject.org">training.galaxyproject.org</a>)</li>
 </ul>
 
-<p><img src="/training-material/topics/introduction/images/gtn_stats.png" alt="Screenshot of the gtn stats page with 21 topics, 170 tutorials, 159 contributors, 16 scientific topics, and a growing community" /></p>
+<p><img src="/training-material/topics/introduction/images/gtn_stats.png" alt="Screenshot of the gtn stats page with 21 topics, 170 tutorials, 159 contributors, 16 scientific topics, and a growing community. " loading="lazy" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -749,7 +742,7 @@
   <li>
     <p><strong>Help Forum</strong> (<a href="https://help.galaxyproject.org">help.galaxyproject.org</a>)</p>
 
-    <p><img src="/training-material/topics/introduction/images/galaxy_help.png" alt="Galaxy Help" /></p>
+    <p><img src="/training-material/topics/introduction/images/galaxy_help.png" alt="Galaxy Help. " loading="lazy" /></p>
   </li>
   <li>
     <p><strong>Gitter Chat</strong></p>
@@ -778,7 +771,7 @@
   <li>Event Horizon: <a href="https://galaxyproject.org/events">galaxyproject.org/events</a></li>
 </ul>
 
-<p><img src="/training-material/topics/introduction/images/event_horizon.png" alt="Event schedule" /></p>
+<p><img src="/training-material/topics/introduction/images/event_horizon.png" alt="Event schedule. " loading="lazy" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -825,44 +818,42 @@ This material is licensed under the <a rel="license" href="https://creativecommo
         The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
         </p>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/b3192832de88c502588a977a276ac4ec8ba940b2">b3192832de88c502588a977a276ac4ec8ba940b2</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/dba078257bcd21dcfd74b58134ab6e6f8cd589a5">dba078257bcd21dcfd74b58134ab6e6f8cd589a5</a></p>
     </div>
 </footer>
 
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>

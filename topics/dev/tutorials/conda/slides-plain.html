@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
         <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/dev/tutorials/conda/slides-plain.html" />
@@ -24,7 +23,7 @@
 <meta name="DC.type" content="text" />
 <meta name="DC.title" content="Tool Dependencies and Conda" />
 <meta name="DC.publisher" content="Galaxy Training Network" />
-<meta name="DC.date" content="1970-01-01 00:33:41 +0000" />
+<meta name="DC.date" content="2023-03-15 15:19:32 +0000" />
 <meta name="DC.creator" content="Nicola Soranzo" />
 <meta name="DC.creator" content="John Chilton" />
 <meta name="DC.creator" content="Björn Grüning" />
@@ -34,21 +33,25 @@
         
         
         
-        
-        <meta name="description" content="Collection of tutorials developed and maintained by the w..." />
+        <meta name="description" content="Galaxy is an open-source project. Everyone can contribute..." />
         <meta property="og:site_name" content="Galaxy Training Network" />
         <meta property="og:title" content="Galaxy Training: Tool Dependencies and Conda" />
-        <meta property="og:description" content="Collection of tutorials developed and maintained by the w..." />
+        <meta property="og:description" content="Galaxy is an open-source project. Everyone can contribute..." />
+        
         <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
 
+        
     </head>
     <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
+                
+                    Galaxy Training!
+                
             </a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -116,6 +119,12 @@
            <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
         
+        
+        <a class="dropdown-item" href="/training-material/topics/dev/faqs/" title="Check our FAQs for the Development in Galaxy topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
             <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
         </a>
@@ -145,6 +154,7 @@
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
+        <!-- link to feedback -->
         
             <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
@@ -157,27 +167,14 @@
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
             </div>
 
         </div>
@@ -187,7 +184,6 @@
                 <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
             </div>
 
-            
             <div id="archive-selector">
             
                 <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-07-01/topics/dev/tutorials/conda/slides-plain.html" title="Version 2022-07-01">2022-07-01</a>
@@ -223,6 +219,7 @@
     </nav>
 </header>
 
+        
         <div class="container main-content" role="main">
         <section class="tutorial">
 	<a href="https://github.com/galaxyproject/training-material/blob/main//topics/dev/tutorials/conda/slides.html">View markdown source on GitHub</a>
@@ -231,23 +228,7 @@
 <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: 
-<a href="/training-material/hall-of-fame/nsoranzo/" class="contributor-badge contributor-nsoranzo"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/nsoranzo?s=27" alt="Avatar">Nicola Soranzo</a>
-
-
-
-<a href="/training-material/hall-of-fame/jmchilton/" class="contributor-badge contributor-jmchilton"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/jmchilton?s=27" alt="Avatar">John Chilton</a>
-
-
-
-<a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a>
-
-
-
-<a href="/training-material/hall-of-fame/hmenager/" class="contributor-badge contributor-hmenager"><img src="https://avatars.githubusercontent.com/hmenager?s=27" alt="Avatar">Hervé Ménager</a>
-
-
-
+		Authors: <a href="/training-material/hall-of-fame/nsoranzo/" class="contributor-badge contributor-nsoranzo"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/nsoranzo?s=27" alt="Avatar">Nicola Soranzo</a><a href="/training-material/hall-of-fame/jmchilton/" class="contributor-badge contributor-jmchilton"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/jmchilton?s=27" alt="Avatar">John Chilton</a><a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a><a href="/training-material/hall-of-fame/hmenager/" class="contributor-badge contributor-hmenager"><img src="https://avatars.githubusercontent.com/hmenager?s=27" alt="Avatar">Hervé Ménager</a>
 	</div>
 
 </div>
@@ -323,26 +304,6 @@
                         
                     
                         
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
                             
                             <li> Tool development and integration into Galaxy:
                             
@@ -365,27 +326,25 @@
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                 
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
                     
                         
                     
@@ -420,6 +379,24 @@
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                 
             </ul>
         
@@ -429,7 +406,7 @@
 		</ul>
 		
 
-		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jul 26, 2021 </div>
+		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Mar 15, 2023 </div>
 
 	<hr />
 
@@ -481,7 +458,7 @@
 
 <h2 id="dependency-resolution">Dependency Resolution</h2>
 
-<p><img src="../../images/galaxy_instance.png" alt="schematic of a galaxy server with dependency resolution via requirement tags at the top. On the left is the tool box with a number of xml files listed like seqtk_seq and seqtk_subseq. On the right is applications &amp; libraries showing only a few tools like seqtk, all of the 3 multipoe subtools were collapsed" /></p>
+<p><img src="../../images/galaxy_instance.png" alt="schematic of a galaxy server with dependency resolution via requirement tags at the top. On the left is the tool box with a number of xml files listed like seqtk_seq and seqtk_subseq. On the right is applications &amp; libraries showing only a few tools like seqtk, all of the 3 multipoe subtools were collapsed. " loading="lazy" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -497,7 +474,7 @@ on the right - we will talk about Conda which is what we consider the
 
 <p>class: enlarge120</p>
 
-<p><img src="../../../../shared/images/conda_logo.png" alt="Conda logo" /></p>
+<p><img src="../../../../shared/images/conda_logo.png" alt="Conda logo. " loading="lazy" /></p>
 
 <p>Package, dependency and environment management</p>
 
@@ -505,7 +482,7 @@ on the right - we will talk about Conda which is what we consider the
 
 <p>class: enlarge120</p>
 
-<p>###.image-25[<img src="../../../../shared/images/conda_logo.png" alt="Conda logo" />] <br /> Conda Terminology</p>
+<p>###.image-25[<img src="../../../../shared/images/conda_logo.png" alt="Conda logo. " loading="lazy" />] <br /> Conda Terminology</p>
 
 <p>Conda <strong>recipes</strong> build <strong>packages</strong> that are published to <strong>channels</strong>.</p>
 
@@ -513,7 +490,7 @@ on the right - we will talk about Conda which is what we consider the
 
 <p>class: enlarge120</p>
 
-<h3 id="image-25--conda-key-features-for-galaxy">.image-25[<img src="../../../../shared/images/conda_logo.png" alt="Conda logo" />] <br /> Conda Key Features for Galaxy</h3>
+<h3 id="image-25--conda-key-features-for-galaxy">.image-25[<img src="../../../../shared/images/conda_logo.png" alt="Conda logo. " loading="lazy" />] <br /> Conda Key Features for Galaxy</h3>
 
 <ul>
   <li>
@@ -553,18 +530,18 @@ on the right - we will talk about Conda which is what we consider the
 
 <hr />
 
-<p>###.image-25[<img src="../../../../shared/images/conda_logo.png" alt="Conda logo" />] <br /> Conda Distributions</p>
+<p>###.image-25[<img src="../../../../shared/images/conda_logo.png" alt="Conda logo. " loading="lazy" />] <br /> Conda Distributions</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 
 </code></pre></div></div>
-<p><img src="../../images/miniconda_vs_anaconda.png" alt="Schematic showing conda as a small circle, miniconda encompasses it and adds python and base packages. Anaconda encompasses all of it, adding 150 high quality packages." /></p>
+<p><img src="../../images/miniconda_vs_anaconda.png" alt="Schematic showing conda as a small circle, miniconda encompasses it and adds python and base packages. Anaconda encompasses all of it, adding 150 high quality packages." loading="lazy" /></p>
 
 <hr />
 
 <p>class: enlarge120</p>
 
-<p>###.image-25[<img src="../../../../shared/images/conda_logo.png" alt="conda logo" />] <br /> Best Practice Channels</p>
+<p>###.image-25[<img src="../../../../shared/images/conda_logo.png" alt="conda logo. " loading="lazy" />] <br /> Best Practice Channels</p>
 
 <ul>
   <li>
@@ -587,7 +564,7 @@ on the right - we will talk about Conda which is what we consider the
 
 <p>class: left, enlarge120</p>
 
-<p>###.image-25[<img src="../../../../shared/images/conda_logo.png" alt="conda logo" />] <br /> Install and Configure</p>
+<p>###.image-25[<img src="../../../../shared/images/conda_logo.png" alt="conda logo. " loading="lazy" />] <br /> Install and Configure</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>planemo conda_init
 <span class="nv">$ </span><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:~/miniconda3/bin
@@ -603,7 +580,7 @@ on the right - we will talk about Conda which is what we consider the
 
 <p>class: enlarge120</p>
 
-<p>###.image-25[<img src="../../../../shared/images/conda_logo.png" alt="conda logo" />] <br /> Quickstart</p>
+<p>###.image-25[<img src="../../../../shared/images/conda_logo.png" alt="conda logo. " loading="lazy" />] <br /> Quickstart</p>
 <h4 id="using-conda-outside-planemo">Using Conda outside Planemo</h4>
 
 <ul>
@@ -637,13 +614,13 @@ yaml           ~/miniconda3/envs/yaml
 
 <h3 id="installing-tools-with-conda">Installing Tools with Conda</h3>
 
-<p><img src="../../images/tool_install.png" alt="Screnshot of tool installation menu" /></p>
+<p><img src="../../images/tool_install.png" alt="Screnshot of tool installation menu. " loading="lazy" /></p>
 
 <hr />
 
 <h3 id="managing-tool-dependencies">Managing Tool Dependencies</h3>
 
-<p><img src="../../images/dependency_manage.png" alt="Screenshot of the galaxy page for managing tool dependencies" /></p>
+<p><img src="../../images/dependency_manage.png" alt="Screenshot of the galaxy page for managing tool dependencies. " loading="lazy" /></p>
 
 <hr />
 
@@ -792,20 +769,20 @@ The following line indicates the seqtk package was found:
 
 ---
 
-### &lt;i class="fas fa-pencil-alt" aria-hidden="true"&gt;&lt;/i&gt;&lt;span class="visually-hidden"&gt;hands_on&lt;/span&gt; Hands-on
+&lt;div class="box-title hands-on-title" id="hands-on-hands-on" aria-label="hands-on box: Hands-on"&gt;&lt;i class="fas fa-pencil-alt" aria-hidden="true"&gt;&lt;/i&gt;&lt;span class="visually-hidden"&gt;&lt;/span&gt; Hands-on: Hands-on&lt;/div&gt;
 
-![Cartoon of people jumping.](../../images/exercise.png)
+&lt;img src="../../images/exercise.png" alt="Cartoon of people jumping."  loading="lazy"&gt;
 
 ---
 
-### &lt;i class="fas fa-pencil-alt" aria-hidden="true"&gt;&lt;/i&gt;&lt;span class="visually-hidden"&gt;hands_on&lt;/span&gt; Hands-on
+&lt;div class="box-title hands-on-title" id="hands-on-hands-on-1" aria-label="hands-on box: Hands-on"&gt;&lt;i class="fas fa-pencil-alt" aria-hidden="true"&gt;&lt;/i&gt;&lt;span class="visually-hidden"&gt;&lt;/span&gt; Hands-on: Hands-on&lt;/div&gt;
 
 #### The Goal
 - Use the Planemo commands `conda_install`, `conda_env`, and `test` to practice the Galaxy tool dependency development lifecycle.
 
 ---
 
-### &lt;i class="fas fa-pencil-alt" aria-hidden="true"&gt;&lt;/i&gt;&lt;span class="visually-hidden"&gt;hands_on&lt;/span&gt; Hands-on
+&lt;div class="box-title hands-on-title" id="hands-on-hands-on-2" aria-label="hands-on box: Hands-on"&gt;&lt;i class="fas fa-pencil-alt" aria-hidden="true"&gt;&lt;/i&gt;&lt;span class="visually-hidden"&gt;&lt;/span&gt; Hands-on: Hands-on&lt;/div&gt;
 
 #### Steps
 
@@ -860,13 +837,13 @@ seqtk                        r75                           0  bioconda
 
 <h3 id="using-anaconda-search---httpsanacondaorg">Using Anaconda Search - https://anaconda.org</h3>
 
-<p><img src="../../images/anaconda_landing.png" alt="screensho of the anaconda homepage" /></p>
+<p><img src="../../images/anaconda_landing.png" alt="screensho of the anaconda homepage. " loading="lazy" /></p>
 
 <hr />
 
 <h3 id="using-anaconda-search---httpsanacondaorg-1">Using Anaconda Search - https://anaconda.org</h3>
 
-<p><img src="../../images/anaconda_result.png" alt="Screenshot of an anaconda search for the term seqtk" /></p>
+<p><img src="../../images/anaconda_result.png" alt="Screenshot of an anaconda search for the term seqtk. " loading="lazy" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -875,13 +852,13 @@ only one that will be used by Galaxy by default.</p>
 
 <hr />
 
-<h3 id="hands_on-hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on</h3>
+<div class="box-title hands-on-title" id="hands-on-hands-on-3" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
 
-<p><img src="../../images/exercise.png" alt="Cartoon of people jumping." /></p>
+<p><img src="../../images/exercise.png" alt="Cartoon of people jumping." loading="lazy" /></p>
 
 <hr />
 
-<h3 id="hands_on-hands-on-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on</h3>
+<div class="box-title hands-on-title" id="hands-on-hands-on-4" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
 
 <h4 id="the-goal">The Goal</h4>
 <ul>
@@ -891,7 +868,7 @@ only one that will be used by Galaxy by default.</p>
 
 <hr />
 
-<h3 id="hands_on-hands-on-2"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on</h3>
+<div class="box-title hands-on-title" id="hands-on-hands-on-5" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
 
 <h4 id="steps">Steps</h4>
 
@@ -1099,7 +1076,7 @@ make <span class="nb">install</span>
 
 <hr />
 
-<p>.image-75[<img src="../../../../shared/images/bioconda_logo.png" alt="bioconda logo" />]</p>
+<p>.image-75[<img src="../../../../shared/images/bioconda_logo.png" alt="bioconda logo. " loading="lazy" />]</p>
 
 <ul>
   <li>A channel dedicated to bioinformatics (and other informatics) packages</li>
@@ -1111,7 +1088,7 @@ make <span class="nb">install</span>
 
 <hr />
 
-<p>###.image-25[<img src="../../../../shared/images/bioconda_logo.png" alt="bioconda logo" />] contributing 1/2</p>
+<p>###.image-25[<img src="../../../../shared/images/bioconda_logo.png" alt="bioconda logo. " loading="lazy" />] contributing 1/2</p>
 
 <ul>
   <li>Fork <a href="https://github.com/bioconda/bioconda-recipes/fork">Bioconda</a>.</li>
@@ -1135,7 +1112,7 @@ make <span class="nb">install</span>
 
 <hr />
 
-<p>###.image-25[<img src="../../../../shared/images/bioconda_logo.png" alt="bioconda logo" />] contributing 2/2</p>
+<p>###.image-25[<img src="../../../../shared/images/bioconda_logo.png" alt="bioconda logo. " loading="lazy" />] contributing 2/2</p>
 
 <ul>
   <li>
@@ -1176,13 +1153,13 @@ cache.</p>
 
 <hr />
 
-<h3 id="hands_on-hands-on-3"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on</h3>
+<div class="box-title hands-on-title" id="hands-on-hands-on-6" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
 
-<p><img src="../../images/exercise.png" alt="Cartoon of people jumping." /></p>
+<p><img src="../../images/exercise.png" alt="Cartoon of people jumping." loading="lazy" /></p>
 
 <hr />
 
-<h3 id="hands_on-hands-on-4"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on</h3>
+<div class="box-title hands-on-title" id="hands-on-hands-on-7" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
 
 <h4 id="the-goal-1">The Goal</h4>
 <ul>
@@ -1194,7 +1171,7 @@ cache.</p>
 
 <p>class: left</p>
 
-<h3 id="hands_on-hands-on-5"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on</h3>
+<div class="box-title hands-on-title" id="hands-on-hands-on-8" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
 
 <h4 id="before">Before</h4>
 
@@ -1211,7 +1188,7 @@ cache.</p>
 
 <p>class: left</p>
 
-<h3 id="hands_on-hands-on-6"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on</h3>
+<div class="box-title hands-on-title" id="hands-on-hands-on-9" aria-label="hands-on box: Hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Hands-on</div>
 
 <h4 id="steps-1">Steps</h4>
 
@@ -1505,7 +1482,7 @@ Exceptions are r-* packages that depends on bioconductor-* packages.</em></p>
 
 <h2 id="circleci-continuous-building">CircleCI Continuous Building</h2>
 
-<p>.image-70[<img src="../../images/circleci-logo.png" alt="circle ci logo" />]</p>
+<p>.image-70[<img src="../../images/circleci-logo.png" alt="circle ci logo. " loading="lazy" />]</p>
 
 <ul>
   <li>Lint recipes.</li>
@@ -1602,44 +1579,42 @@ This material is licensed under the <a rel="license" href="https://creativecommo
         The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
         </p>
 
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/b3192832de88c502588a977a276ac4ec8ba940b2">b3192832de88c502588a977a276ac4ec8ba940b2</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/dba078257bcd21dcfd74b58134ab6e6f8cd589a5">dba078257bcd21dcfd74b58134ab6e6f8cd589a5</a></p>
     </div>
 </footer>
 
         
+        <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+        <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+        <script type="text/javascript">
+        var snippets=document.querySelectorAll('div.highlight');
+        [].forEach.call(snippets,function(snippet){
+            snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
+        
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>
