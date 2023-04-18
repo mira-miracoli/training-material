@@ -409,7 +409,7 @@
       ],
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ],
@@ -611,7 +611,7 @@
       ],
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ],
@@ -1070,6 +1070,12 @@
         "/topics/ecology/tutorials/biodiversity-data-exploration/tutorial.html"
       ],
       [
+        "ecology/obisindicators",
+        "Obis marine indicators",
+        "Ecology",
+        "/topics/ecology/tutorials/obisindicators/tutorial.html"
+      ],
+      [
         "ecology/species-distribution-modeling",
         "Species distribution modeling",
         "Ecology",
@@ -1113,7 +1119,7 @@
       ],
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ],
@@ -2019,7 +2025,7 @@
       ],
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ],
@@ -2607,7 +2613,7 @@
       ],
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ],
@@ -3775,7 +3781,7 @@
       ],
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ],
@@ -3869,7 +3875,7 @@
       ],
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ],
@@ -4687,6 +4693,46 @@
       ]
     ]
   },
+  "iuc/collection_column_join": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/collection_column_join/collection_column_join/0.0.3",
+        "0.0.3"
+      ]
+    ],
+    "tutorials": [
+      [
+        "assembly/metagenomics-assembly",
+        "Assembly of metagenomic sequencing data",
+        "Assembly",
+        "/topics/assembly/tutorials/metagenomics-assembly/tutorial.html"
+      ],
+      [
+        "assembly/vgp_genome_assembly",
+        "VGP assembly pipeline",
+        "Assembly",
+        "/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html"
+      ],
+      [
+        "metagenomics/metagenomics-assembly",
+        "Assembly of metagenomic sequencing data",
+        "Metagenomics",
+        "/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html"
+      ],
+      [
+        "single-cell/scrna-preprocessing",
+        "Pre-processing of Single-Cell RNA Data",
+        "Single Cell",
+        "/topics/single-cell/tutorials/scrna-preprocessing/tutorial.html"
+      ],
+      [
+        "transcriptomics/rna-seq-reads-to-counts",
+        "1: RNA-Seq reads to counts",
+        "Transcriptomics",
+        "/topics/transcriptomics/tutorials/rna-seq-reads-to-counts/tutorial.html"
+      ]
+    ]
+  },
   "Summary_Statistics1": {
     "tool_id": [
       [
@@ -5004,6 +5050,46 @@
         "Somatic Variant Discovery from WES Data Using Control-FREEC",
         "Variant Analysis",
         "/topics/variant-analysis/tutorials/somatic-variant-discovery/tutorial.html"
+      ]
+    ]
+  },
+  "csv_to_tabular": {
+    "tool_id": [
+      [
+        "csv_to_tabular",
+        "csv_to_tabular"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/obisindicators",
+        "Obis marine indicators",
+        "Ecology",
+        "/topics/ecology/tutorials/obisindicators/tutorial.html"
+      ],
+      [
+        "galaxy-interface/workflow-reports",
+        "Workflow Reports",
+        "Using Galaxy and Managing your Data",
+        "/topics/galaxy-interface/tutorials/workflow-reports/tutorial.html"
+      ],
+      [
+        "introduction/galaxy-intro-101-everyone",
+        "Galaxy 101 for everyone",
+        "Introduction to Galaxy Analyses",
+        "/topics/introduction/tutorials/galaxy-intro-101-everyone/tutorial.html"
+      ],
+      [
+        "introduction/galaxy-reproduce",
+        "How to reproduce published Galaxy analyses",
+        "Introduction to Galaxy Analyses",
+        "/topics/introduction/tutorials/galaxy-reproduce/tutorial.html"
+      ],
+      [
+        "statistics/clustering_machinelearning",
+        "Clustering in Machine Learning",
+        "Statistics and machine learning",
+        "/topics/statistics/tutorials/clustering_machinelearning/tutorial.html"
       ]
     ]
   },
@@ -5777,40 +5863,6 @@
       ]
     ]
   },
-  "iuc/collection_column_join": {
-    "tool_id": [
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/collection_column_join/collection_column_join/0.0.3",
-        "0.0.3"
-      ]
-    ],
-    "tutorials": [
-      [
-        "assembly/metagenomics-assembly",
-        "Assembly of metagenomic sequencing data",
-        "Assembly",
-        "/topics/assembly/tutorials/metagenomics-assembly/tutorial.html"
-      ],
-      [
-        "metagenomics/metagenomics-assembly",
-        "Assembly of metagenomic sequencing data",
-        "Metagenomics",
-        "/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html"
-      ],
-      [
-        "single-cell/scrna-preprocessing",
-        "Pre-processing of Single-Cell RNA Data",
-        "Single Cell",
-        "/topics/single-cell/tutorials/scrna-preprocessing/tutorial.html"
-      ],
-      [
-        "transcriptomics/rna-seq-reads-to-counts",
-        "1: RNA-Seq reads to counts",
-        "Transcriptomics",
-        "/topics/transcriptomics/tutorials/rna-seq-reads-to-counts/tutorial.html"
-      ]
-    ]
-  },
   "iuc/bandage_info": {
     "tool_id": [
       [
@@ -5858,18 +5910,6 @@
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy4",
         "1.3+galaxy4"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy2",
-        "1.3+galaxy2"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy1",
-        "1.3+galaxy1"
-      ],
-      [
-        "toolshed.g2.bx.psu.edu/repos/iuc/meryl/meryl/1.3+galaxy0",
-        "1.3+galaxy0"
       ]
     ],
     "tutorials": [
@@ -6332,40 +6372,6 @@
         "1: RNA-Seq reads to counts",
         "Transcriptomics",
         "/topics/transcriptomics/tutorials/rna-seq-reads-to-counts/tutorial.html"
-      ]
-    ]
-  },
-  "csv_to_tabular": {
-    "tool_id": [
-      [
-        "csv_to_tabular",
-        "csv_to_tabular"
-      ]
-    ],
-    "tutorials": [
-      [
-        "galaxy-interface/workflow-reports",
-        "Workflow Reports",
-        "Using Galaxy and Managing your Data",
-        "/topics/galaxy-interface/tutorials/workflow-reports/tutorial.html"
-      ],
-      [
-        "introduction/galaxy-intro-101-everyone",
-        "Galaxy 101 for everyone",
-        "Introduction to Galaxy Analyses",
-        "/topics/introduction/tutorials/galaxy-intro-101-everyone/tutorial.html"
-      ],
-      [
-        "introduction/galaxy-reproduce",
-        "How to reproduce published Galaxy analyses",
-        "Introduction to Galaxy Analyses",
-        "/topics/introduction/tutorials/galaxy-reproduce/tutorial.html"
-      ],
-      [
-        "statistics/clustering_machinelearning",
-        "Clustering in Machine Learning",
-        "Statistics and machine learning",
-        "/topics/statistics/tutorials/clustering_machinelearning/tutorial.html"
       ]
     ]
   },
@@ -7584,12 +7590,12 @@
   "iuc/genomescope": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/iuc/genomescope/genomescope/2.0+galaxy1",
-        "2.0+galaxy1"
+        "toolshed.g2.bx.psu.edu/repos/iuc/genomescope/genomescope/2.0+galaxy2",
+        "2.0+galaxy2"
       ],
       [
-        "toolshed.g2.bx.psu.edu/repos/iuc/genomescope/genomescope/2.0",
-        "2.0"
+        "toolshed.g2.bx.psu.edu/repos/iuc/genomescope/genomescope/2.0+galaxy1",
+        "2.0+galaxy1"
       ]
     ],
     "tutorials": [
@@ -11556,12 +11562,12 @@
   "bgruening/hifiasm": {
     "tool_id": [
       [
-        "toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.16.1+galaxy2",
-        "0.16.1+galaxy2"
+        "toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.18.8+galaxy1",
+        "0.18.8+galaxy1"
       ],
       [
-        "toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.14+galaxy0",
-        "0.14+galaxy0"
+        "toolshed.g2.bx.psu.edu/repos/bgruening/hifiasm/hifiasm/0.16.1+galaxy2",
+        "0.16.1+galaxy2"
       ]
     ],
     "tutorials": [
@@ -16139,7 +16145,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16155,7 +16161,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16171,7 +16177,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16187,7 +16193,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16203,7 +16209,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16219,7 +16225,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16235,7 +16241,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16251,7 +16257,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -16267,7 +16273,7 @@
     "tutorials": [
       [
         "single-cell/scrna-case_monocle3-trajectories",
-        "Trajectory Analysis using Monocle3 ",
+        "Trajectory Analysis using Monocle3",
         "Single Cell",
         "/topics/single-cell/tutorials/scrna-case_monocle3-trajectories/tutorial.html"
       ]
@@ -17013,6 +17019,26 @@
       ]
     ]
   },
+  "ecology/obisindicators": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/obisindicators/obisindicators/0.0.2",
+        "0.0.2"
+      ],
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/obisindicators/obisindicators/0.0.1",
+        "0.0.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/obisindicators",
+        "Obis marine indicators",
+        "Ecology",
+        "/topics/ecology/tutorials/obisindicators/tutorial.html"
+      ]
+    ]
+  },
   "interactive_tool_wallace": {
     "tool_id": [
       [
@@ -17349,6 +17375,102 @@
       ]
     ]
   },
+  "ecology/srs_spectral_indices": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/srs_spectral_indices/srs_spectral_indices/0.0.1",
+        "0.0.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/remote-sensing",
+        "Sentinel 2 biodiversity",
+        "Ecology",
+        "/topics/ecology/tutorials/remote-sensing/tutorial.html"
+      ]
+    ]
+  },
+  "ecology/srs_process_data": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/srs_process_data/srs_process_data/0.0.1",
+        "0.0.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/remote-sensing",
+        "Sentinel 2 biodiversity",
+        "Ecology",
+        "/topics/ecology/tutorials/remote-sensing/tutorial.html"
+      ]
+    ]
+  },
+  "ecology/srs_preprocess_s2": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/srs_preprocess_s2/srs_preprocess_s2/0.0.1",
+        "0.0.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/remote-sensing",
+        "Sentinel 2 biodiversity",
+        "Ecology",
+        "/topics/ecology/tutorials/remote-sensing/tutorial.html"
+      ]
+    ]
+  },
+  "ecology/srs_pca": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/srs_pca/srs_pca/0.0.1",
+        "0.0.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/remote-sensing",
+        "Sentinel 2 biodiversity",
+        "Ecology",
+        "/topics/ecology/tutorials/remote-sensing/tutorial.html"
+      ]
+    ]
+  },
+  "ecology/srs_global_indices": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/srs_global_indices/srs_global_indices/0.0.1",
+        "0.0.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/remote-sensing",
+        "Sentinel 2 biodiversity",
+        "Ecology",
+        "/topics/ecology/tutorials/remote-sensing/tutorial.html"
+      ]
+    ]
+  },
+  "ecology/srs_diversity_maps": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/srs_diversity_maps/srs_diversity_maps/0.0.1",
+        "0.0.1"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/remote-sensing",
+        "Sentinel 2 biodiversity",
+        "Ecology",
+        "/topics/ecology/tutorials/remote-sensing/tutorial.html"
+      ]
+    ]
+  },
   "ecology/pampa_presabs": {
     "tool_id": [
       [
@@ -17529,6 +17651,22 @@
     "tool_id": [
       [
         "toolshed.g2.bx.psu.edu/repos/ecology/cb_ivr/cb_ivr/0.0.0",
+        "0.0.0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "ecology/champs-blocs",
+        "Champs blocs indicators",
+        "Ecology",
+        "/topics/ecology/tutorials/champs-blocs/tutorial.html"
+      ]
+    ]
+  },
+  "ecology/cb_div": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/ecology/cb_div/cb_div/0.0.0",
         "0.0.0"
       ]
     ],
@@ -18335,6 +18473,10 @@
   },
   "iuc/pyega3": {
     "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/iuc/ega_download_client/pyega3/4.0.5+galaxy2",
+        "4.0.5+galaxy2"
+      ],
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/ega_download_client/pyega3/4.0.0+galaxy0",
         "4.0.0+galaxy0"
@@ -19322,6 +19464,22 @@
       [
         "toolshed.g2.bx.psu.edu/repos/iuc/bwa_mem2/bwa_mem2/2.2.1+galaxy0",
         "2.2.1+galaxy0"
+      ]
+    ],
+    "tutorials": [
+      [
+        "assembly/vgp_genome_assembly",
+        "VGP assembly pipeline",
+        "Assembly",
+        "/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html"
+      ]
+    ]
+  },
+  "bgruening/gfastats": {
+    "tool_id": [
+      [
+        "toolshed.g2.bx.psu.edu/repos/bgruening/gfastats/gfastats/1.3.6+galaxy0",
+        "1.3.6+galaxy0"
       ]
     ],
     "tutorials": [

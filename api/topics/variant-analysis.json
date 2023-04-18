@@ -35,7 +35,7 @@
         "lat": 45.77,
         "lon": 3.08
       },
-      "fediverse": "bebatut@piaille.fr",
+      "fediverse": "https://piaille.fr/@bebatut",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -163,7 +163,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -211,8 +211,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/introduction/slides.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/introduction/slides.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/introduction/slides.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/introduction/slides.json"
       }
     },
     {
@@ -248,6 +248,7 @@
         {
           "name": "Alex Ostrovsky",
           "email": "a.ostrovsky@mac.com",
+          "orcid": "0000-0002-7901-7109",
           "joined": "2019-06",
           "id": "astrovsky01",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/astrovsky01.json",
@@ -310,8 +311,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/non-dip/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/non-dip/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/non-dip/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/non-dip/tutorial.json"
       }
     },
     {
@@ -421,8 +422,8 @@
         "work-in-progress"
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/dunovo/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/dunovo/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/dunovo/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/dunovo/tutorial.json"
       }
     },
     {
@@ -534,8 +535,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/sars-cov-2/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/sars-cov-2/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/sars-cov-2/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/sars-cov-2/tutorial.json"
       }
     },
     {
@@ -629,8 +630,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/dip/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/dip/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/dip/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/dip/tutorial.json"
       }
     },
     {
@@ -726,8 +727,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/somatic-variants/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/somatic-variants/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/somatic-variants/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/somatic-variants/tutorial.json"
       }
     },
     {
@@ -779,6 +780,7 @@
           "gitter": "hexylena",
           "joined": "2017-09",
           "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -831,22 +833,18 @@
       "workflows": [
         {
           "workflow": "main_workflow.ga",
-          "tests": false,
+          "tests": true,
           "url": "https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/trio-analysis/workflows/main_workflow.ga",
           "path": "topics/variant-analysis/tutorials/trio-analysis/workflows/main_workflow.ga",
           "wfid": "variant-analysis-trio-analysis",
           "wfname": "main_workflow",
           "trs_endpoint": "https://training.galaxyproject.org/training-material/api/ga4gh/trs/v2/tools/variant-analysis-trio-analysis/versions/main_workflow",
-          "license": "GPL-3.0-or-later",
+          "license": "MIT",
           "creators": [
             {
               "class": "Person",
-              "identifier": "",
+              "identifier": "0000-0003-2556-2125",
               "name": "Jasper Ouwerkerk"
-            },
-            {
-              "class": "Organization",
-              "name": "Erasmus Medical Center"
             }
           ]
         }
@@ -859,6 +857,7 @@
         "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_merge/bcftools_merge/1.10",
         "toolshed.g2.bx.psu.edu/repos/iuc/bcftools_norm/bcftools_norm/1.9+galaxy1",
         "toolshed.g2.bx.psu.edu/repos/iuc/ega_download_client/pyega3/4.0.0+galaxy0",
+        "toolshed.g2.bx.psu.edu/repos/iuc/ega_download_client/pyega3/4.0.5+galaxy2",
         "toolshed.g2.bx.psu.edu/repos/iuc/gemini_inheritance/gemini_inheritance/0.20.1",
         "toolshed.g2.bx.psu.edu/repos/iuc/gemini_load/gemini_load/0.20.1+galaxy2",
         "toolshed.g2.bx.psu.edu/repos/iuc/snpeff/snpEff/4.3+T.galaxy1"
@@ -876,8 +875,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/trio-analysis/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/trio-analysis/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/trio-analysis/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/trio-analysis/tutorial.json"
       }
     },
     {
@@ -978,8 +977,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/microbial-variants/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/microbial-variants/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/microbial-variants/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/microbial-variants/tutorial.json"
       }
     },
     {
@@ -1162,8 +1161,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/tb-variant-analysis/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/tb-variant-analysis/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.json"
       }
     },
     {
@@ -1215,7 +1214,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1287,8 +1286,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/sars-cov-2-variant-discovery/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/sars-cov-2-variant-discovery/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/sars-cov-2-variant-discovery/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/sars-cov-2-variant-discovery/tutorial.json"
       }
     },
     {
@@ -1419,8 +1418,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/somatic-variant-discovery/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/somatic-variant-discovery/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/somatic-variant-discovery/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/somatic-variant-discovery/tutorial.json"
       }
     },
     {
@@ -1505,8 +1504,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/mapping-by-sequencing/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/mapping-by-sequencing/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.json"
       }
     },
     {
@@ -1553,7 +1552,7 @@
             "lat": 45.77,
             "lon": 3.08
           },
-          "fediverse": "bebatut@piaille.fr",
+          "fediverse": "https://piaille.fr/@bebatut",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1658,8 +1657,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/exome-seq/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/exome-seq/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/exome-seq/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/exome-seq/tutorial.json"
       }
     },
     {
@@ -1745,8 +1744,8 @@
       },
       "type": "tutorial",
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/aiv-analysis/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics//variant-analysis/tutorials/aiv-analysis/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/aiv-analysis/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/variant-analysis/tutorials/aiv-analysis/tutorial.json"
       }
     }
   ]
