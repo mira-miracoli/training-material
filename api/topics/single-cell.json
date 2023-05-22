@@ -1768,7 +1768,7 @@
                 "pavanvidem"
               ],
               "captions": [
-
+                "pavanvidem"
               ],
               "date": "2023-05-19",
               "length": "19M",
@@ -1788,7 +1788,7 @@
             }
           ],
           "gtn_id": "single-cell/scrna-preprocessing-tenx",
-          "captioned": false
+          "captioned": true
         },
         "slides": null,
         "demo": null,
