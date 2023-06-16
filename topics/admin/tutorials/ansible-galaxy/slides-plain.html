@@ -23,7 +23,7 @@
 <meta name="DC.type" content="text">
 <meta name="DC.title" content="Galaxy Installation with Ansible">
 <meta name="DC.publisher" content="Galaxy Training Network">
-<meta name="DC.date" content="2023-06-15 01:30:44 +0000">
+<meta name="DC.date" content="2023-06-16 01:38:39 +0000">
 <meta name="DC.creator" content="Simon Gladman">
 <meta name="DC.creator" content="Nate Coraor">
 
@@ -31,12 +31,12 @@
         
         
         
-        <meta name="description" content="Resources related to configuration and maintenance of Gal...">
+        <meta name="description" content="Collection of tutorials developed and maintained by the w...">
         <meta property="og:site_name" content="Galaxy Training Network">
         <meta property="og:title" content="Galaxy Training: Galaxy Installation with Ansible">
-        <meta property="og:description" content="Resources related to configuration and maintenance of Gal...">
+        <meta property="og:description" content="Collection of tutorials developed and maintained by the w...">
         
-        <meta property="og:image" content="/training-material/assets/images/gat.png">
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
 
         
     </head>
@@ -88,12 +88,6 @@
         <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
            <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
-        
-        
-        <a class="dropdown-item" href="/training-material/topics/admin/faqs/" title="Check our FAQs for the Galaxy Server administration topic">
-           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
-        </a>
-        
         
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
             <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
@@ -258,14 +252,14 @@
 
 		
 
-		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 15, 2023 </div>
+		<div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 16, 2023 </div>
 
 	<hr />
 
 
 	<h2 id="install-postgresql--galaxy-extensions">Install PostgreSQL &amp; Galaxy extensions</h2>
 
-<p><img src="../../images/ansible-galaxy-0.png" alt="Graph showing a Postgres DB in a minimal deployment (one node)" /></p>
+<p><img src="../../images/ansible-galaxy-0.png" alt="Graph showing a Postgres DB in a minimal deployment (one node). " loading="lazy" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -278,7 +272,7 @@
 
 <h2 id="install-galaxy--attach-storage">Install Galaxy &amp; Attach Storage</h2>
 
-<p><img src="../../images/ansible-galaxy-1.png" alt="Galaxy is now attached to the DB. Storage is connected to Galaxy" /></p>
+<p><img src="../../images/ansible-galaxy-1.png" alt="Galaxy is now attached to the DB. Storage is connected to Galaxy. " loading="lazy" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -291,7 +285,7 @@
 
 <h2 id="setup-gunicorn">Setup Gunicorn</h2>
 
-<p><img src="../../images/ansible-galaxy-2.png" alt="Gunicorn is attached to Galaxy" /></p>
+<p><img src="../../images/ansible-galaxy-2.png" alt="Gunicorn is attached to Galaxy. " loading="lazy" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -303,7 +297,7 @@
 
 <h2 id="configure-nginx">Configure NGINX</h2>
 
-<p><img src="../../images/ansible-galaxy-3.png" alt="NGINX is added to proxy Gunicorn" /></p>
+<p><img src="../../images/ansible-galaxy-3.png" alt="NGINX is added to proxy Gunicorn. " loading="lazy" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -315,7 +309,7 @@
 
 <h2 id="configure-backup">Configure Backup</h2>
 
-<p><img src="../../images/ansible-galaxy-4.png" alt="A backup location area is added, with a node DB backup inside connected to the PostgreSQL db" /></p>
+<p><img src="../../images/ansible-galaxy-4.png" alt="A backup location area is added, with a node DB backup inside connected to the PostgreSQL db. " loading="lazy" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -329,7 +323,7 @@
 
 <h2 id="configure-cvmfs">Configure CVMFS</h2>
 
-<p><img src="../../images/ansible-galaxy-5.png" alt="A cvmfs cache is added connected to Galaxy, next to storage" /></p>
+<p><img src="../../images/ansible-galaxy-5.png" alt="A cvmfs cache is added connected to Galaxy, next to storage. " loading="lazy" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -343,7 +337,7 @@
 
 <h2 id="configure-job-handlers">Configure Job Handlers</h2>
 
-<p><img src="../../images/ansible-galaxy-6.png" alt="Job Handlers are added, connected to Galaxy. This connects to a Slurm deployment which is connected to a compute node which points to storage and cvmfs" /></p>
+<p><img src="../../images/ansible-galaxy-6.png" alt="Job Handlers are added, connected to Galaxy. This connects to a Slurm deployment which is connected to a compute node which points to storage and cvmfs. " loading="lazy" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -359,7 +353,7 @@
 
 <h2 id="setup-remote-compute">Setup Remote Compute</h2>
 
-<p><img src="../../images/ansible-galaxy-7.png" alt="Remote compute site, with Pulsar and compute is attached to the job handlers" /></p>
+<p><img src="../../images/ansible-galaxy-7.png" alt="Remote compute site, with Pulsar and compute is attached to the job handlers. " loading="lazy" /></p>
 
 <p><span>Speaker Notes</span></p>
 
@@ -458,7 +452,7 @@
 
 <h2 id="example-advanced-usegalaxy-deployment">Example “Advanced” UseGalaxy.* Deployment</h2>
 
-<p><img src="../../images/ansible-galaxy-usegalaxy.png" alt="The same deployment as before, but now they are segmented differently. Postgres and Rabbit MQ on their own hosts, storage on an NFS server, slurm and compute on a Cluster, and then nginx, gunicorn, galaxy, and job handlers on a Head Node" /></p>
+<p><img src="../../images/ansible-galaxy-usegalaxy.png" alt="The same deployment as before, but now they are segmented differently. Postgres and Rabbit MQ on their own hosts, storage on an NFS server, slurm and compute on a Cluster, and then nginx, gunicorn, galaxy, and job handlers on a Head Node. " loading="lazy" /></p>
 
 <p><span>Speaker Notes</span></p>
 
