@@ -1,61 +1,60 @@
 
 # HELP gtn_pages_total Total number of Pages
 # TYPE gtn_pages_total counter
-gtn_pages_total{layout=""} 0 1687917291000
-gtn_pages_total{layout="base"} 8 1687917291000
-gtn_pages_total{layout="base_slides"} 3 1687917291000
-gtn_pages_total{layout="contributor_index"} 292 1687917291000
-gtn_pages_total{layout="faq"} 370 1687917291000
-gtn_pages_total{layout="faq-page"} 321 1687917291000
-gtn_pages_total{layout="hall-of-fame"} 1 1687917291000
-gtn_pages_total{layout="home"} 1 1687917291000
-gtn_pages_total{layout="introduction_slides"} 15 1687917291000
-gtn_pages_total{layout="learning-pathway"} 2 1687917291000
-gtn_pages_total{layout="none"} 1 1687917291000
-gtn_pages_total{layout="page"} 5 1687917291000
-gtn_pages_total{layout="slides-plain"} 109 1687917291000
-gtn_pages_total{layout="topic"} 27 1687917291000
-gtn_pages_total{layout="training_philosophy"} 6 1687917291000
-gtn_pages_total{layout="tutorial_hands_on"} 336 1687917291000
-gtn_pages_total{layout="tutorial_slides"} 90 1687917291000
-gtn_pages_total{layout="tutorial_slides_ai4life"} 1 1687917291000
-gtn_pages_total{layout="workflow-list"} 181 1687917291000
+gtn_pages_total{layout=""} 0 1688003578000
+gtn_pages_total{layout="base"} 8 1688003578000
+gtn_pages_total{layout="base_slides"} 3 1688003578000
+gtn_pages_total{layout="contributor_index"} 292 1688003578000
+gtn_pages_total{layout="faq"} 370 1688003578000
+gtn_pages_total{layout="faq-page"} 321 1688003578000
+gtn_pages_total{layout="hall-of-fame"} 1 1688003578000
+gtn_pages_total{layout="home"} 1 1688003578000
+gtn_pages_total{layout="introduction_slides"} 15 1688003578000
+gtn_pages_total{layout="learning-pathway"} 2 1688003578000
+gtn_pages_total{layout="none"} 1 1688003578000
+gtn_pages_total{layout="page"} 5 1688003578000
+gtn_pages_total{layout="topic"} 27 1688003578000
+gtn_pages_total{layout="training_philosophy"} 6 1688003578000
+gtn_pages_total{layout="tutorial_hands_on"} 336 1688003578000
+gtn_pages_total{layout="tutorial_slides"} 90 1688003578000
+gtn_pages_total{layout="tutorial_slides_ai4life"} 1 1688003578000
+gtn_pages_total{layout="workflow-list"} 181 1688003578000
 
 # HELP gtn_contributors_total Total number of Contributors
 # TYPE gtn_contributors_total counter
-gtn_contributors_total{orcid="true"} 80 1687917291000
-gtn_contributors_total{orcid="false"} 210 1687917291000
+gtn_contributors_total{orcid="true"} 80 1688003578000
+gtn_contributors_total{orcid="false"} 210 1688003578000
 
 # HELP gtn_tutorials_total Total number of Hands-on Tutorials
 # TYPE gtn_tutorials_total counter
-gtn_tutorials_total 336 1687917291000
+gtn_tutorials_total 336 1688003578000
 
 # HELP gtn_faqs_total Total number of FAQs
 # TYPE gtn_faqs_total counter
-gtn_faqs_total 370 1687917291000
+gtn_faqs_total 370 1688003578000
 
 # HELP gtn_project_years_total Total years of project lifetime
 # TYPE gtn_project_years_total counter
-gtn_project_years_total 8.002739726027396 1687917291000
+gtn_project_years_total 8.005479452054795 1688003578000
 
 # HELP tutorial_update_age_days How recently was every single Hands-on Tutorial touched within the GTN, grouped by days since last edited.
 # TYPE tutorial_update_age_days histogram
-tutorial_update_age_days{le="1"} 1 1687917291000
-tutorial_update_age_days{le="7"} 0 1687917291000
-tutorial_update_age_days{le="28"} 0 1687917291000
-tutorial_update_age_days{le="90"} 34 1687917291000
-tutorial_update_age_days{le="365"} 298 1687917291000
-tutorial_update_age_days{le="730"} 1 1687917291000
-tutorial_update_age_days{le="1095"} 1 1687917291000
-tutorial_update_age_days{le="+Inf"} 1 1687917291000
+tutorial_update_age_days{le="1"} 1 1688003578000
+tutorial_update_age_days{le="7"} 0 1688003578000
+tutorial_update_age_days{le="28"} 0 1688003578000
+tutorial_update_age_days{le="90"} 34 1688003578000
+tutorial_update_age_days{le="365"} 298 1688003578000
+tutorial_update_age_days{le="730"} 1 1688003578000
+tutorial_update_age_days{le="1095"} 1 1688003578000
+tutorial_update_age_days{le="+Inf"} 1 1688003578000
 
 # HELP contributor_join_age_days When did contributors join? Buckets of their ages by days since joined.
 # TYPE contributor_join_age_days histogram
-contributor_join_age_days{le="1"} 0 1687917291000
-contributor_join_age_days{le="7"} 0 1687917291000
-contributor_join_age_days{le="28"} 0 1687917291000
-contributor_join_age_days{le="90"} 2 1687917291000
-contributor_join_age_days{le="365"} 19 1687917291000
-contributor_join_age_days{le="730"} 76 1687917291000
-contributor_join_age_days{le="1095"} 35 1687917291000
-contributor_join_age_days{le="+Inf"} 77 1687917291000
+contributor_join_age_days{le="1"} 0 1688003578000
+contributor_join_age_days{le="7"} 0 1688003578000
+contributor_join_age_days{le="28"} 0 1688003578000
+contributor_join_age_days{le="90"} 2 1688003578000
+contributor_join_age_days{le="365"} 19 1688003578000
+contributor_join_age_days{le="730"} 76 1688003578000
+contributor_join_age_days{le="1095"} 35 1688003578000
+contributor_join_age_days{le="+Inf"} 77 1688003578000
