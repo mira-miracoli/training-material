@@ -41,7 +41,8 @@
     "single-cell",
     "trajectory-analysis",
     "paper-replication",
-    "rmarkdown-notebook"
+    "rmarkdown-notebook",
+    "jupyter-notebook"
   ],
   "contributions": {
     "authorship": [
