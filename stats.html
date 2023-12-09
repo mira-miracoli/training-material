@@ -207,7 +207,7 @@
 
 <div class="stats">
 
-<!--SNIPPET--> <!-- tutorial stats --> <div class="row" style="color: var(--text-color-boxtitle)"> <div class="col-md-4">  <div class="gtn-card color-agenda">    <div class="card-title">33</div>    <div class="card-text">Topics</div>  </div> </div> <div class="col-md-4">  <div class="gtn-card color-tip">    <div class="card-title">336</div>    <div class="card-text">Tutorials</div>  </div> </div> <div class="col-md-4">  <div class="gtn-card color-details">    <div class="card-title">370</div>    <div class="card-text"><abbr title="Frequently Asked Questions">FAQs</abbr></div>  </div> </div> <div class="col-md-6">  <div class="gtn-card color-comment">    <div class="card-title">290</div>    <div class="card-text">Contributors</div>  </div> </div> <div class="col-md-6">  <div class="gtn-card color-handson">    <div class="card-title">8.4</div>    <div class="card-text">Years</div>  </div> </div> </div> 
+<!--SNIPPET--> <!-- tutorial stats --> <div class="row" style="color: var(--text-color-boxtitle)"> <div class="col-md-4">  <div class="gtn-card color-agenda">    <div class="card-title">33</div>    <div class="card-text">Topics</div>  </div> </div> <div class="col-md-4">  <div class="gtn-card color-tip">    <div class="card-title">336</div>    <div class="card-text">Tutorials</div>  </div> </div> <div class="col-md-4">  <div class="gtn-card color-details">    <div class="card-title">370</div>    <div class="card-text"><abbr title="Frequently Asked Questions">FAQs</abbr></div>  </div> </div> <div class="col-md-6">  <div class="gtn-card color-comment">    <div class="card-title">290</div>    <div class="card-text">Contributors</div>  </div> </div> <div class="col-md-6">  <div class="gtn-card color-handson">    <div class="card-title">8.5</div>    <div class="card-text">Years</div>  </div> </div> </div> 
 <div class="row">
 
 <!-- tutorials per topic -->
@@ -379,36 +379,8 @@
                 Galaxy Server administration
             </a>
 </td>
-        <td><a href="/training-material//topics/admin/tutorials/monitoring/tutorial.html">
-            Galaxy Monitoring with Telegraf and Grafana
-            </a></td>
-      </tr>
-    
-            
-            
-      <tr>
-        <td></td>
-        <td style="text-align:right">
-            <a href="/training-material/topics/admin">
-                Galaxy Server administration
-            </a>
-</td>
-        <td><a href="/training-material//topics/admin/tutorials/pulsar/tutorial.html">
-            Running Jobs on Remote Resources with Pulsar
-            </a></td>
-      </tr>
-    
-            
-            
-      <tr>
-        <td></td>
-        <td style="text-align:right">
-            <a href="/training-material/topics/admin">
-                Galaxy Server administration
-            </a>
-</td>
-        <td><a href="/training-material//topics/admin/tutorials/ftp/tutorial.html">
-            Enable upload via FTP
+        <td><a href="/training-material//topics/admin/tutorials/apptainer/tutorial.html">
+            Use Apptainer containers for running Galaxy jobs
             </a></td>
       </tr>
     
@@ -437,6 +409,34 @@
 </td>
         <td><a href="/training-material//topics/admin/tutorials/tiaas/tutorial.html">
             Training Infrastructure as a Service (TIaaS)
+            </a></td>
+      </tr>
+    
+            
+            
+      <tr>
+        <td></td>
+        <td style="text-align:right">
+            <a href="/training-material/topics/admin">
+                Galaxy Server administration
+            </a>
+</td>
+        <td><a href="/training-material//topics/admin/tutorials/celery/tutorial.html">
+            Setting up Celery Workers for Galaxy
+            </a></td>
+      </tr>
+    
+            
+            
+      <tr>
+        <td></td>
+        <td style="text-align:right">
+            <a href="/training-material/topics/admin">
+                Galaxy Server administration
+            </a>
+</td>
+        <td><a href="/training-material//topics/admin/tutorials/monitoring/tutorial.html">
+            Galaxy Monitoring with Telegraf and Grafana
             </a></td>
       </tr>
     
@@ -523,8 +523,8 @@ var tutorialsBar = new Chart('tutorialsBar', {
 
 // Technical Topics
 // Chart displaying number of tutorials per topic
-var data_tutos = [21,36,14,22,19,47];
-var labels_topics = ["Development in Galaxy","Foundations of Data Science","Teaching and Hosting Galaxy training","Using Galaxy and Managing your Data","Contributing to the Galaxy Training Material","Galaxy Server administration"];
+var data_tutos = [47,19,21,14,22,36];
+var labels_topics = ["Galaxy Server administration","Contributing to the Galaxy Training Material","Development in Galaxy","Teaching and Hosting Galaxy training","Using Galaxy and Managing your Data","Foundations of Data Science"];
 
 var tutorialsBarTechnical = new Chart("tutorialsBarTechnical", {
   type: 'horizontalBar',
