@@ -40,7 +40,8 @@
   "tags": [
     "single-cell",
     "trajectory-analysis",
-    "paper-replication"
+    "paper-replication",
+    "rmarkdown-notebook"
   ],
   "contributions": {
     "authorship": [
